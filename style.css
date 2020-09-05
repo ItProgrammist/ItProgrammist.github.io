@@ -22,12 +22,12 @@ h1{
 }
 div{
      float: left; /*Задаем обтекание*/
-   /*font-size: 40px;
+     font-size: 40px;
      background: dodgerblue;
      color: white;
      margin-top: 60px;
      width: 150px; /*Фиксируем ширину блока*/
-   /*margin-right: 10px;
+     margin-right: 10px;
      margin-left: 16%;
      text-align: center; /*Центрируем текст по горизонтали*/
 }
