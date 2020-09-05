@@ -20,8 +20,8 @@ h1{
     background: aqua;
     text-align: right;
 }
-/*div{
-   /*float: left; /*Задаем обтекание*/
+div{
+     float: left; /*Задаем обтекание*/
    /*font-size: 40px;
      background: dodgerblue;
      color: white;
