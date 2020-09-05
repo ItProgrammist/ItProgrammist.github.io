@@ -1,0 +1,55 @@
+h1{
+    position: relative;
+    text-align: center;
+}
+.c1{
+    height: 150px;
+    border-radius: 50%;
+    background: red;
+    text-align: left;
+}
+.c2{
+    height: 150px;
+    border-radius: 50%;
+    background: green;
+    text-align: center;
+}
+.c3{
+    height: 150px;
+    border-radius: 50%;
+    background: aqua;
+    text-align: right;
+}
+div{
+    float: left; /*Задаем обтекание*/
+     font-size: 40px;
+     background: dodgerblue;
+     color: white;
+     margin-top: 60px;
+     width: 150px; /*Фиксируем ширину блока*/
+     margin-right: 10px;
+     margin-left: 16%;
+     text-align: center; /*Центрируем текст по горизонтали*/
+}
+img{
+    margin-top: 5%;
+    border-radius: 5%;
+    margin-bottom: 1%;
+}
+#pic{
+    text-align: center;
+}
+.in_but{
+    text-align: center;
+}
+#pic img{
+    -webkit-transition: all 0.5s ease-out;
+ transition: all 0.5s ease-out;
+}
+#pic img:hover{
+    -webkit-transform: scale(0.95);
+}
+#pic img:active{
+    transform: rotate(180deg);
+    duration: 2s;
+}
