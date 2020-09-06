@@ -29,6 +29,7 @@ h1{
    } 
 
 img{
+    width: 200px;
     user-select: none;
     margin-top: 5%;
     border-radius: 5%;
