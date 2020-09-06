@@ -1,6 +1,7 @@
 h1{
     position: relative;
     text-align: center;
+    margin-top: 15px;
 }
 #container {
     width: 600px;
