@@ -12,6 +12,7 @@ h1{
     background: red;
     border-radius: 50%;
     margin-left: 20px;
+    margin-top: 20px;
     float: left; 
     background: rgb(255,51,102);  
    }
@@ -21,6 +22,7 @@ h1{
     background: green;
     border-radius: 50%;
     margin-left: 20px;
+    margin-top: 20px;
     float: left;  
     background: rgb(0,255,153);  
    } 
@@ -30,6 +32,7 @@ h1{
     background: aqua;
     border-radius: 50%;
     margin-left: 20px;
+    margin-top: 20px;
     float: left;
     background: rgb(255,0,0);  
    } 
