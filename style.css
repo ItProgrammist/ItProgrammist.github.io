@@ -21,7 +21,14 @@ h1{
     text-align: right;
 }
 div{
-     
+     float: left; /*Задаем обтекание*/
+     font-size: 40px;
+     color: white;
+     margin-top: 60px;
+     width: 150px; /*Фиксируем ширину блока*/
+     margin-right: 10px;
+     margin-left: 16%;
+     text-align: center; /*Центрируем текст по горизонтали*/ 
 }
 img{
     user-select: none;
