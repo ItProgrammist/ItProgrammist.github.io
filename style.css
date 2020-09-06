@@ -2,34 +2,29 @@ h1{
     position: relative;
     text-align: center;
 }
-.c1{
-    height: 150px;
-    border-radius: 50%;
-    background: red;
-    text-align: left;
+#container {
+    width: 600px;
+    margin: 0 auto;
 }
-.c2{
-    height: 150px;
-    border-radius: 50%;
-    background: green;
-    text-align: center;
-}
-.c3{
-    height: 150px;
-    border-radius: 50%;
-    background: aqua;
-    text-align: right;
-}
-div{
-     float: left; /*Задаем обтекание*/
-     font-size: 40px;
-     color: white;
-     margin-top: 60px;
-     width: 150px; /*Фиксируем ширину блока*/
-     margin-right: 10px;
-     margin-left: 16%;
-     text-align: center; /*Центрируем текст по горизонтали*/ 
-}
+#left {
+    width: 200px;
+	height: 100px;
+    float: left; 
+    background: rgb(255,51,102);  
+   }
+#right { 
+    width: 200px;
+	height: 100px;
+    float: left;  
+    background: rgb(0,255,153);  
+   } 
+#center { 
+    width: 200px;
+	height: 100px;
+    float: left;
+    background: rgb(255,0,0);  
+   } 
+
 img{
     user-select: none;
     margin-top: 5%;
