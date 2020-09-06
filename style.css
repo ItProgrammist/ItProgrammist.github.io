@@ -21,10 +21,7 @@ h1{
     text-align: right;
 }
 div{
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+     
 }
 img{
     user-select: none;
