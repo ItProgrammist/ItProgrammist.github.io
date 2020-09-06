@@ -3,21 +3,21 @@ h1{
     text-align: center;
     margin-top: 15px;
 }
-#left {
+.left {
     width: 200px;
     height: 200px;
     background: red;
     border-radius: 50%;   
     margin-top: 20px;
    }
-#right { 
+.right { 
     width: 200px;
     height: 200px;
     background: green;
     border-radius: 50%;
     margin-top: 20px;
    } 
-#center { 
+.center { 
     width: 200px;
     height: 200px;
     background: aqua;
