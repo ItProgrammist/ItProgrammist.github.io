@@ -1,0 +1,35 @@
+img {
+	user-select: none;
+}
+
+nav a {
+	color: black;
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+#carouselExampleSlidesOnly {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+#im1_g img {
+	height: 260px;
+	width: 260px;
+}
+#im2_g img {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: 260px;
+	width: 260px;
+}
+
+#carouselExampleSlidesOnly img {
+	height: 530px;
+}
+
+@media (max-width: 420px) {
+	#first_block {
+		text-align: center;
+	}
+}
