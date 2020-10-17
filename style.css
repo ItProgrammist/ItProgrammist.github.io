@@ -14,14 +14,16 @@ nav a {
 }
 
 #im1_g img {
-	height: 260px;
-	width: 260px;
+	height: 360px;
+	width: 100%;
+	margin-bottom: 45px;
+	margin-left: 100px;
 }
 #im2_g img {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    height: 260px;
-	width: 260px;
+    height: 360px;
+	width: 100%;
+	margin-bottom: 45px;
+	margin-left: 100px;
 }
 
 #carouselExampleSlidesOnly img {
@@ -31,5 +33,39 @@ nav a {
 @media (max-width: 420px) {
 	#first_block {
 		text-align: center;
+	}
+
+	#im1_g img {
+	height: 360px;
+	width: 100%;
+	margin-bottom: 45px;
+	margin-left: 0;
+	}
+
+	#im2_g img {
+    	height: 360px;
+		width: 100%;
+		margin-bottom: 45px;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1199px) {
+	#im1_g img {
+	margin-left: 45px;
+	}
+
+	#im2_g img {
+		margin-left: 45px;
+	}
+}
+
+@media (max-width: 991px) {
+	#im1_g img {
+	margin-left: 0;
+	}
+
+	#im2_g img {
+		margin-left: 0;
 	}
 }
