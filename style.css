@@ -8,7 +8,9 @@ nav a {
 	margin-right: 10px;
 }
 
-
+#collapsibleNavbar {
+	margin-left:  185px;
+}
 
 #carouselExampleSlidesOnly {
 	margin-top: 150px;
@@ -34,11 +36,16 @@ nav a {
 
 @media (max-width: 411px) {
 	#logo {
-		margin-left: 140px;
+		margin-left: 130px;
 	}
 	#lines_3 {
 		margin-top: 50px;
-		margin-left: 155px;
+		margin-left: 145px;
+	}
+
+	#collapsibleNavbar {
+		margin-top: 20px;
+		margin-left: 85px;
 	}
 }
 
@@ -51,9 +58,14 @@ nav a {
 		margin-top: 50px;
 		margin-left: 105px;
 	}
+
+	#collapsibleNavbar {
+		margin-top: 20px;
+		margin-left: 45px;
+	}
 }
 
-@media (min-width: 411px) {
+@media (min-width: 411px) and (max-width: 440px) {
 	#logo {
 		margin-left: 155px;
 	}
@@ -61,9 +73,33 @@ nav a {
 		margin-top: 50px;
 		margin-left: 170px;
 	}
+	#collapsibleNavbar {
+		margin-top: 20px;
+		margin-left: 110px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+	#carouselExampleSlidesOnly {
+		width: 100%;
+	}
+
+	#im1_g img {
+		width: 80%;
+		margin-right: 100px;
+	}
+
+	#im2_g img {
+		width: 80%;
+		margin-right: 100px;
+	}
 }
 
 @media (max-width: 1199px) {
+	#collapsibleNavbar {
+		margin-left: 110px;
+	}
+
 	#im1_g img {
 	margin-left: 45px;
 	}
@@ -73,15 +109,27 @@ nav a {
 	}
 }
 
-@media (min-width: 992px) {
-	#first_link {
-		margin-left: 465px;
+@media (min-width: 440px) and (max-width: 575px) {
+	#logo {
+		margin-left: 210px;
+	}
+	#lines_3 {
+		margin-top: 50px;
+		margin-left: 225px;
+	}
+	#collapsibleNavbar {
+		margin-top: 20px;
+		margin-left: 165px;
 	}
 }
 
-@media (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 770px) {
+	#logo {
+		margin-left: -10px
+	}
+
 	#first_link {
-		margin-left: 90px;
+		margin-left: -70px;
 	}
 
 	#im1_g img {
