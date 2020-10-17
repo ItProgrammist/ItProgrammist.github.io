@@ -32,27 +32,34 @@ nav a {
 	height: 530px;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 411px) {
+	#logo {
+		margin-left: 140px;
+	}
 	#lines_3 {
+		margin-top: 50px;
+		margin-left: 155px;
+	}
+}
 
+@media (max-width: 330px) {
+	#logo {
+		margin-left: 90px;
 	}
 
-	#first_block {
-		text-align: center;
+	#lines_3 {
+		margin-top: 50px;
+		margin-left: 105px;
 	}
+}
 
-	#im1_g img {
-	height: 360px;
-	width: 100%;
-	margin-bottom: 45px;
-	margin-left: 0;
+@media (min-width: 411px) {
+	#logo {
+		margin-left: 155px;
 	}
-
-	#im2_g img {
-    	height: 360px;
-		width: 100%;
-		margin-bottom: 45px;
-		margin-left: 0;
+	#lines_3 {
+		margin-top: 50px;
+		margin-left: 170px;
 	}
 }
 
