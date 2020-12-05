@@ -1,0 +1,330 @@
+		
+		/* style.css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font: 14px/18px 'Times New Roman', Times, sans-serif;
+	background-color: #FFF;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img {
+	user-select: none;
+}
+
+a, a:hover {text-decoration: none;}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {clear: both;}
+
+.left {float:left;}
+.right {float:right;}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+/* Шапка сайта */
+
+#header {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	width: 100%;
+	padding: 20px 0;
+}
+
+#header.default {
+	position: fixed;
+	top: 0;
+	background-color: rgba(254, 254, 254);
+	transition: background-color 0.2s ease;
+	/* -webkit-box-shadow: 0px 3px 8px 0px rgba(50, 50, 50, 0.87);
+	-moz-box-shadow:    0px 3px 8px 0px rgba(50, 50, 50, 0.87);
+	box-shadow:         0px 3px 8px 0px rgba(50, 50, 50, 0.87);	 */
+}
+
+/* Лого */
+.logo {
+	font-size: 22px;
+	font-weight: 600;
+	font-style: italic;
+	float: left;
+	margin-right: 10px;
+	user-select: none;
+}
+
+.logo a {
+	color:#8B4250;
+}
+
+#header a:hover {
+	text-decoration: none;		
+}
+
+.logo a:hover {
+	color: #e76600;
+}
+
+/* Меню в шапке */
+.nav {
+	float: right;
+	padding-top: 5px;
+	user-select: none;
+}
+
+.nav li {
+	float: left;
+	margin-right: 35px;
+}
+
+.nav li:last-child {margin-right: 0;}
+
+.nav a {
+	text-transform: uppercase;
+	font: 16px Arial, sans-serif;
+	color: #fff;
+}
+
+#header.default .nav a {color: #222;}
+
+.nav a:hover, #header.default .nav a:hover {text-decoration: none; color: gray;}
+
+/* Секция HOME */
+#home {
+	height: 700px;
+	background: #000 url(https://smartwebmarketing.ru/wp-content/uploads/2017/03/intro-bg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+#home {
+	padding-top: 190px;
+	text-align: center;
+	color: #fff;
+}
+
+#home h3 {
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	font: 40px/46px Arial, sans-serif;
+	user-select: none;
+}
+
+#home h1 {
+	margin-bottom: 55px;
+	text-transform: uppercase;
+	font: 50px/80px Arial, sans-serif;
+	user-select: none;
+}
+
+.btn {
+	display: inline-block;
+	height: 50px;
+	padding: 20px 30px;
+	text-transform: uppercase;
+	text-align: center;
+	font: bold 24px/24px Arial, sans-serif;
+	color: #fff;
+	user-select: none;
+}
+
+#button_text {
+	margin-top: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.btn-warn {
+	background: orange;
+}
+
+#button_caption {
+	color: #fff;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+
+/* Сервис */
+#services {
+	padding: 120px 0 80px;
+}
+
+h2.title {
+	margin-bottom: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font: bold 40px/40px Arial, sans-serif;
+	color: #222;
+}
+
+h5.title {
+	margin-bottom: 5px;
+	font: bold 18px/18px Arial, sans-serif;
+}
+
+h5.title a {color: #222;}
+
+h5.title a:hover {text-decoration: underline;}
+
+.descr {
+	margin-bottom: 70px;
+	text-align: center;
+	font-size: 18px;
+	color: #777;
+}
+
+.services-wrap {
+	margin-top: 70px;
+}
+
+.services-item {
+	float: left;
+	width: 33.33%;
+	padding: 100px 8px 0;
+}
+
+.services-item h5 {
+	text-align: center;
+}
+
+.services-item .descr {
+	max-height: 75px;
+	font-size: 18px;
+	line-height: 26px;
+	overflow: hidden;
+}
+
+#service_icon {
+	margin-top: -100px;
+}
+
+#services img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 25px;
+}
+
+#services p {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#I_Can_1, #I_Can_2, #I_Can_3 {
+	margin-top: -120px;
+}
+
+/* Портфолио */
+#portfolio {
+	padding: 120px 0;
+	background: #F7F7F7;
+}
+
+#Portfolio img {
+  /*-moz-transition: all 1s ease-out;
+ 	-o-transition: all 1s ease-out;
+ 	-webkit-transition: all 1s ease-out;*/
+	width: 100%;
+	max-width: 1080px;
+	user-select: none; 
+}
+
+#Portfolio img:hover {
+   /*-webkit-transform: scale(1.07);
+	 -moz-transform: scale(1.07);
+	 -o-transform: scale(1.07);*/
+}
+
+.line_caption {
+	 height: 5px;
+	 border-radius: 10px;
+	 background: black;
+	 margin-bottom: 20px;
+ }
+
+.row img {
+  width: 800px;
+  height: 245px;  
+}
+
+#skills {
+	padding: 120px 0;
+}
+
+#circles img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+#footer {
+	background-image: url(http://lekvilla.com/wp-content/uploads/2015/07/BACKGROUND-FOOTER-1.jpg);
+	text-align: center;
+}
+
+.footer_text h4 {
+	color: white;
+}
+
+.footer_text h2 {
+	color: white;
+}
+
+#submit_form {
+	padding: 50px;
+}
+
+#copyright {
+	margin-bottom: -40px;
+}
