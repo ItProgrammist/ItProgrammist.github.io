@@ -2,18 +2,31 @@
 		/*Media.css*/
 
 @media (min-width: 1200px) {
+
     .line_caption {
 		margin-left: 115px;
 	}
+
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
     .line_caption {
 		margin-left: 95px;
 	}
+
 }
 
-@media(max-width: 450px) {
+@media (max-width: 450px) {
+
+	#home h3 {
+		font-size: 25px;
+	}
+
+	#home h1{
+		font-size: 35px;
+	}
+
     #btn_Media {
         font-size: 0;
 	}
@@ -24,10 +37,26 @@
 		margin-top: -90px;
 		height: 30px;
 	}
-	#adress_Media1, #adress_Media2 {
+	#adress_Media1{
+		margin-top: -130px;
+	}
+	#copyright_Media {
+		margin-top: 10px;
+	}
+
+}
+
+@media (min-width: 451px) and (max-width: 718px){
+
+	#fuild_media {
+		margin-top: -90px;
+		height: 30px;
+	}
+	#adress_Media1 {
 		margin-top: -90px;
 	}
 	#copyright_Media {
 		margin-top: 70px;
 	}
+
 }
