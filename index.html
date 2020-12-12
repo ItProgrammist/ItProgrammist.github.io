@@ -1,5 +1,5 @@
 
-								<!-- Edit_Portfolio -->
+<!-- Edit_Portfolio -->
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -59,7 +59,7 @@
 
 	<div id="skills">
 		<div class="container">
-			<h2 class="title wow fadeIn">Мои навыки</h2>
+			<h2 class="title wow fadeIn mt-5">Мои навыки</h2>
 			<p class="descr wow fadeIn">Одни из большинства</p>
 			<div class="row justify-content-center wow fadeIn">
 				<div class="col-lg-12">
@@ -200,66 +200,73 @@
 
 				<div class="col-lg-2"></div>
 
-				<div id="fuild_media" class="input-group col-lg-8 text-center wow fadeIn">
-					<input type="text" class="form-control" placeholder="Введите сообщение..." aria-label="Recipient's username" aria-describedby="basic-addon2">
-					<button id="btn_Media" style="height: 75px;" type="button" class="btn btn-danger ml-3 col-3">SUBMIT</button>
-				</div> <br><br><br>
+			<div id="fuild_media" class="input-group col-lg-8 text-center wow fadeIn">
+				<input type="text" class="form-control" placeholder="Введите сообщение..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+				<button id="btn_Media" style="height: 75px;" type="button" class="btn btn-danger ml-3 col-3">SUBMIT</button>
+			</div> <br><br><br>
 
-				<div id="adress_Media" class="col-lg-12 text-center mt-5 wow fadeIn" style="color: white;">
-					<p id="adress_Media1" style="margin-bottom: -1px;">It-Студия Дмитрий Козлова</p>
-					<p id="adress_Media2">Томск, Россия</p>
-					<p id="copyright_Media" id="copyright" class="wow fadeIn">©Copyright 2020. Private license.</p>
-				</div>
+			<div id="adress_Media" class="col-lg-12 text-center mt-5 wow fadeIn" style="color: white;">
+				<p id="adress_Media1" style="margin-bottom: -1px;">It-Студия Дмитрий Козлова</p>
+				<p id="adress_Media2">Томск, Россия</p>
+				<p id="copyright_Media" id="copyright" class="wow fadeIn">©Copyright 2020. Private license.</p>
 			</div>
 		</div>
 	</div>
+</div>
 
-  <!-- WOW -->
-  <script type="text/javascript">
-	  new WOW().init();
-  </script>
+	<!-- WOW -->
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
 
-  <!-- Плавная прокрутка меню -->
-  <script type="text/javascript">
-	  $(document).ready(function(){
+	<!-- Плавная прокрутка меню -->
+	<script type="text/javascript">
+		$(document).ready(function(){
 
-		  // Фикмированная шапка при скролле
-		  $("#header").removeClass("default");
+			// Фикмированная шапка при скролле
+			$("#header").removeClass("default");
 
-		  $(window).scroll(function(){
-			elScroll = $(this).scrollTop();
-			if (elScroll == 0 ) {
-				$("navJS a").css({
-					"color": "rgb(254, 254, 254)"
-				})
-			}
-			if (elScroll > 0 && elScroll < 450 ) {
-				$("#header").css(
-					{
-						"position": "fixed",
-						"top": "0",
-						"backgroundColor": `rgb(254, 254, 254, ${elScroll/450})`,
-						"transition": "background-color 0.1s ease"
-					}
-				)
-
-
-				if ( elScroll>290 && elScroll <= 544){
-					$('#navJS a').css({
-						"color": `rgb(${254 - (elScroll-200)}, ${254 - (elScroll-200)}, ${254 - (elScroll-200)})`
+			$(window).scroll(function(){
+				elScroll = $(this).scrollTop();
+				if (elScroll == 0 ) {
+					$("navJS a").css({
+						"color": "white"
 					})
 				}
 
-			}
 
-			
+				if (elScroll > 0 && elScroll < 450 ) {
+					$("#header").css(
+						{
+							"position": "fixed",
+							"top": "0",
+							"backgroundColor": `rgb(254, 254, 254, ${elScroll/450})`,
+							"transition": "background-color 0.1s ease"
+						}
+					)
 
-			else if (elScroll >= 450) {
-				$("#header").addClass("default").fadeIn('fast');
-			};
-		  });
-	  });
-  </script>
+
+					if ( elScroll>290 && elScroll <= 450){
+						$('#navJS a').css({
+							"color": `rgb(${254 - (elScroll-200)}, ${254 - (elScroll-200)}, ${254 - (elScroll-200)})`
+						})
+					}
+
+				}
+				else if (elScroll >= 450) {
+					$("#header").addClass("default").fadeIn('fast');
+					$("#header").css(
+						{
+							"position": "fixed",
+							"top": "0",
+							"backgroundColor": `white`,
+							"transition": "background-color 0.1s ease"
+						}
+					)
+				};
+			});
+		});
+	</script>
 
 </body>
 
