@@ -11,12 +11,12 @@ function draw(){
         ctx.drawImage(bg, 0, 0);
     }
 }
-draw()
+draw();
 
 function draw2(){
     player.sprite.src = "https://github.com/ItProgrammist/Pages/blob/master/img/player.png?raw=true";
     player.sprite.onload = () => {
-        ctx.drawImage(player.sprite,0,0)
+        ctx.drawImage(player.sprite, player.X, player.Y);
     }
 }
 
@@ -26,16 +26,12 @@ let player = {
     Y: 0
 }
 
-let center = field.width / 2;
-let halfPlayer = player.sprite.width / 2;
-
 
 $(field).on("mousemove",
     function(e){
         player.X = e.offsetX;
         player.Y = e.offsetY;
+        player.sprite.width = 0;
         draw2();
-        if (player.X>halfPlayer) {
-            player.sprite.left = halfPlayer - player.X + 'px';
-        } 
+
 });
