@@ -13,7 +13,7 @@ let player = {
 
 $(document).ready(function () {
     
-    player.sprite.src = "shatle.png";
+    player.sprite.src = "shuttle.png";
     player.sprite.width = player.size.x;
     player.sprite.height = player.size.y;
     let bg = new Image(field.width, field.height);
