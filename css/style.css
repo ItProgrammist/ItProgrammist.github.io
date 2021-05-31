@@ -92,6 +92,7 @@ a, a:hover {text-decoration: none;}
 }
 
 /* Лого */
+
 .logo {
 	font-size: 22px;
 	font-weight: 600;
@@ -114,6 +115,7 @@ a, a:hover {text-decoration: none;}
 }
 
 /* Меню в шапке */
+
 .nav {
 	float: right;
 	padding-top: 5px;
@@ -138,9 +140,9 @@ a, a:hover {text-decoration: none;}
 .nav a:hover, #header.default .nav a:hover {text-decoration: none; color: gray;}
 
 /* Секция HOME */
+
 #home {
-	height: 700px;
-	background: #000 url(https://smartwebmarketing.ru/wp-content/uploads/2017/03/intro-bg.jpg) no-repeat center;
+	background: #000 url(../img/HEADER.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	     -o-background-size: cover;
@@ -195,6 +197,7 @@ a, a:hover {text-decoration: none;}
 }
 
 /* Сервис */
+
 #services {
 	padding: 120px 0 80px;
 }
@@ -265,6 +268,7 @@ h5.title a:hover {text-decoration: underline;}
 }
 
 /* Портфолио */
+
 #portfolio {
 	padding: 120px 0;
 	background: #F7F7F7;
@@ -309,7 +313,7 @@ h5.title a:hover {text-decoration: underline;}
 }
 
 #footer {
-	background-image: url(https://github.com/ItProgrammist/ItProgrammist.github.io/blob/master/img/BACKGROUND-FOOTER-1.jpg?raw=true);
+	background-image: url(../img/BACKGROUND-FOOTER-1.jpg);
 	text-align: center;
 }
 
