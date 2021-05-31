@@ -44,7 +44,7 @@
 	<div id="wrapper">
 		<div id="header" class="clearfix wow flash">
 			<div class="container">
-				<div class="logo"><a href="#">Burgundy</a></div>
+				<div class="logo"><a href="#home">IT-СТУДИЯ</a></div>
 				<ul class="nav" id="navJS">
 					<li><a href="#skills">Обо мне</a></li>
 					<li><a href="#portfolio">Портфолио</a></li>
@@ -80,13 +80,13 @@
 						<div class="col-lg-4" id="person2">
 							<img src="./img/bootstrap.jpg" alt="">
 							<h4>Bootstrap</h4>
-							<p class="descr">Фреймворк Bootstrap помогает делать сайт адаптивным с крутым стилем</p>
+							<p class="descr">Фреймворк Bootstrap помогает делать сайт адаптивным и с крутым стилем</p>
 						</div>
 						<div class="col-lg-4" id="person3">
 							<img src="./img/js.jpg" alt="">
 							<h4>JavaScript</h4>
 							<p class="descr">JavaScript позволяет мне расширять свои знания в сфере
-								Web-Программироания каждый день</p>
+								Web-Программирования каждый день</p>
 						</div>
 					</div>
 				</div>
@@ -109,9 +109,9 @@
 			<section id="Portfolio" class="text-center">
 				<h2 class="mb-5 font-weight-bold wow fadeIn">Портфолио</h2>
 
-				<div class="row wow bounceIn">
+				<div class="row">
 					<div class="col-lg-4 col-md-6 mb-4">
-						<div class="view overlay zoom">
+						<div class="view overlay zoom wow bounceIn">
 							<a class="lake" href="./subPages/index.html" title="" alt="Мой первый сайт-визитка на GitHub.com, который я написал в 9 лет! (Исторически важное событие)">
 							<img src="./img/PORTFOLIO_1.jpg" alt="" class="fluid"></img></a>
 							<h4 class="my-4 font-weight-bold">Проект #1</h4>
@@ -120,7 +120,7 @@
 					</div>
 
 					<div class="col-lg-4 col-md-6 mb-4">
-						<div class="view overlay zoom">
+						<div class="view overlay zoom wow bounceIn">
 							<a class="lake" href="#portfolio" title="" alt="Игра на JavaScript (В разработке...)">
 							<img src="./img/PORTFOLIO_2.jpg" alt="" class="fluid"></img></a>
 							<h4 class="my-4 font-weight-bold">Проект #2</h4>
@@ -129,7 +129,7 @@
 					</div>
 
 					<div class="col-lg-4 col-md-6 mb-4">
-						<div class="view overlay zoom">
+						<div class="view overlay zoom wow bounceIn">
 							<a class="lake" href="#portfolio" title="" alt="Проект №3 готовится к своему звездному часу!">
 							<img src="./img/PORTFOLIO_3.jpg" alt="" class="fluid"></img></a>
 							<h4 class="my-4 font-weight-bold">Проект #3</h4>
@@ -138,27 +138,30 @@
 					</div>
 
 					<div class="col-lg-4 col-md-6 mb-4">
-						<div class="view overlay zoom">
+						<div class="view overlay zoom wow bounceIn">
 							<a class="lake" href="#portfolio" title="" alt="Проект №4 готовится к своему звездному часу!">
 							<img src="./img/PORTFOLIO_4.jpg" alt="" class="fluid"></img></a>
 							<h4 class="my-4 font-weight-bold">Проект #4</h4>
+							<div class="line_caption col-lg-4"></div>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 mb-4">
-						<div class="view overlay zoom">
+						<div class="view overlay zoom wow bounceIn">
 							<a class="lake" href="#portfolio" title=""
 								alt="Проект №5 готовится к своему звездному часу!">
 							<img src="./img/PORTFOLIO_5.jpg" alt="" class="fluid"></img></a>
 							<h4 class="my-4 font-weight-bold">Проект #5</h4>
+							<div class="line_caption col-lg-4"></div>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 mb-4">
-						<div class="view overlay zoom">
+						<div class="view overlay zoom wow bounceIn">
 							<a class="lake" href="#portfolio" title="" alt="Проект №6 готовится к своему звездному часу!">
 							<img src="./img/PORTFOLIO_6.jpg" alt="" class="fluid"></img></a>
 							<h4 class="my-4 font-weight-bold">Проект #6</h4>
+							<div class="line_caption col-lg-4"></div>
 						</div>
 					</div>
 				</div>
@@ -170,7 +173,7 @@
 	<div id="services" name="services">
 		<div class="container">
 			<h2 id="Unikalnost_Media" class="title wow fadeIn">Уникальность</h2>
-			<p class="descr wow fadeIn">Помимо того, что я Web-Дизайнер, также увлекаюсь фотографиями. Ещё у моих друзей есть собственная фотостудия!</p>
+			<p class="descr wow fadeIn">Помимо Web-Программирования я также увлекаюсь фотографиями. Ещё у моих друзей есть собственная фотостудия!</p>
 
 			<div class="clearfix services-wrap text-center">
 				<div id="I_Can_1" class="col-lg-4 services-item commerce">
@@ -287,9 +290,24 @@
 							"transition": "background-color 0.1s ease"
 						}
 					)
+					$('#navJS a').css({
+						"color": "black"
+					})
 				};
 			});
 		});
+
+
+		// Плавные переходы по меню к блокам
+		$(document).ready(function(){
+    		$("#header").on("click","a", function (event) {
+        		event.preventDefault();
+        		var id  = $(this).attr('href'),
+            		top = $(id).offset().top;
+        		$('body,html').animate({scrollTop: top}, 1500);
+    		});
+		});
+
 	</script>
 
 </body>

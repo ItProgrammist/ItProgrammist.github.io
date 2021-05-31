@@ -181,7 +181,7 @@ a, a:hover {text-decoration: none;}
 }
 
 #button_text {
-	margin-top: 7px;
+	margin-top: 12px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -191,6 +191,7 @@ a, a:hover {text-decoration: none;}
 }
 
 #button_caption {
+	height: 60px;
 	color: #fff;
 	font-weight: 400;
 	letter-spacing: 0.5px;
