@@ -324,12 +324,20 @@ h5.title a:hover {text-decoration: underline;}
 
 .footer_text h2 {
 	color: white;
+	margin-top: 15px;
 }
 
 .PHP_Form {
 	color: white;
 	text-align: left;
   margin-top: -40px;
+}
+
+#PHP_Text {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 80px;
+	resize: none;
 }
 
 .PHP_Buttton {
