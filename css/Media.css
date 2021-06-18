@@ -23,40 +23,36 @@
 		font-size: 25px;
 	}
 
-	#home h1{
+	#home h1 {
 		font-size: 35px;
 	}
 
-    #btn_Media {
-        font-size: 0;
-	}
 	#Unikalnost_Media {
 		font-size: 30px;
 	}
-	#fuild_media {
-		margin-top: -90px;
-		height: 30px;
+	
+	#PHP_Form {
+		width: 200px;
 	}
-	#adress_Media1{
-		margin-top: -130px;
-	}
-	#copyright_Media {
+
+	#adress_Media {
 		margin-top: 10px;
 	}
 
 }
 
-@media (min-width: 451px) and (max-width: 718px){
+@media (max-width: 290px) {
 
-	#fuild_media {
-		margin-top: -90px;
-		height: 30px;
+	#footer_text_bottom {
+		margin-left: -7px;
 	}
-	#adress_Media1 {
-		margin-top: -90px;
-	}
-	#copyright_Media {
-		margin-top: 70px;
+
+}
+
+@media (min-height: 900px) {
+
+	#welcome {
+		margin-top: 5%;
 	}
 
 }
