@@ -326,10 +326,25 @@ h5.title a:hover {text-decoration: underline;}
 	color: white;
 }
 
+.PHP_Form {
+	color: white;
+	text-align: left;
+  margin-top: -40px;
+}
+
+.PHP_Buttton {
+	height: 55px;
+}
+
 #submit_form {
 	padding: 50px;
 }
 
 #copyright {
 	margin-bottom: -40px;
+}
+
+#adress_Media {
+	color: white;
+	margin-top: 60px;
 }
