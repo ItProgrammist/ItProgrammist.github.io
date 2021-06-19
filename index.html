@@ -57,7 +57,7 @@
 			<div id="welcome" class="container wow bounceIn">
 				<h3>Добро пожаловать!</h3>
 				<h1>It-студия Дмитрия Козлова</h1>
-				<a href="#" class="btn btn-warn" id="button_caption">
+				<a href="#footer" class="btn btn-warn" id="button_caption">
 					<p id="button_text">Хочу в It-студию!</p>
 				</a>
 			</div>
@@ -319,7 +319,7 @@
 
 		// Плавные переходы по меню к блокам
 		$(document).ready(function(){
-    		$("#header").on("click","a", function (event) {
+    		$("#wrapper").on("click","a", function (event) {
         		event.preventDefault();
         		var id  = $(this).attr('href'),
             		top = $(id).offset().top;

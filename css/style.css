@@ -91,6 +91,10 @@ a, a:hover {text-decoration: none;}
 	box-shadow:         0px 3px 8px 0px rgba(50, 50, 50, 0.87);	 */
 }
 
+#header a:hover {
+	text-decoration: none;		
+}
+
 /* Лого */
 
 .logo {
@@ -104,10 +108,6 @@ a, a:hover {text-decoration: none;}
 
 .logo a {
 	color:#8B4250;
-}
-
-#header a:hover {
-	text-decoration: none;		
 }
 
 .logo a:hover {
