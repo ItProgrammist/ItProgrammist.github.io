@@ -55,7 +55,12 @@ $(field).on("click", function(){
             y_position -= 17;
     
             if (timePassed > 200){
+                // Заканчиваем анимацию
                 clearInterval(timer);
+                
+                // Возвращаем пулю на место
+                bullet.pos.x = player.pos.x + 123;
+                bullet.pos.y = player.pos.y + 35;
             }
     
           });
