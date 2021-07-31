@@ -1,12 +1,8 @@
 
-<<<<<<< HEAD
 	/*Media.css*/
 
 
 /* Computers/Laptops */
-=======
-		/*Media.css*/
->>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
 
 @media (min-width: 1200px) {
 
@@ -16,11 +12,8 @@
 
 }
 
-<<<<<<< HEAD
 /* Laptops/Tablets */
 
-=======
->>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
 @media (min-width: 992px) and (max-width: 1200px) {
 
     .line_caption {
@@ -29,11 +22,8 @@
 
 }
 
-<<<<<<< HEAD
 /* Smartphones */
 
-=======
->>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
 @media (max-width: 450px) {
 
 	#home h3 {
@@ -58,26 +48,17 @@
 
 }
 
-<<<<<<< HEAD
 /* Small smartphones */
 
 @media (max-width: 290px) {
 
 	#footer_text_btn {
-=======
-@media (max-width: 290px) {
-
-	#footer_text_bottom {
->>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
 		margin-left: -7px;
 	}
 
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
 @media (min-height: 900px) {
 
 	#welcome {
