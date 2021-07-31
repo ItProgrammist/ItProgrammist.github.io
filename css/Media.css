@@ -1,0 +1,68 @@
+
+	/*Media.css*/
+
+
+/* Computers/Laptops */
+
+@media (min-width: 1200px) {
+
+    .line_caption {
+		margin-left: 115px;
+	}
+
+}
+
+/* Laptops/Tablets */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .line_caption {
+		margin-left: 95px;
+	}
+
+}
+
+/* Smartphones */
+
+@media (max-width: 450px) {
+
+	#home h3 {
+		font-size: 25px;
+	}
+
+	#home h1 {
+		font-size: 35px;
+	}
+
+	#Unikalnost_Media {
+		font-size: 30px;
+	}
+	
+	#PHP_Form {
+		width: 200px;
+	}
+
+	#adress_Media {
+		margin-top: 10px;
+	}
+
+}
+
+/* Small smartphones */
+
+@media (max-width: 290px) {
+
+	#footer_text_btn {
+		margin-left: -7px;
+	}
+
+}
+
+
+@media (min-height: 900px) {
+
+	#welcome {
+		margin-top: 5%;
+	}
+
+}

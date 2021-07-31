@@ -1,0 +1,12 @@
+img{
+  user-select: none;
+}
+
+p {
+  font-size: 25px;
+}
+
+@font-face {
+  font-family: Lobster;
+  src: url(http://fonts.googleapis.com/css?family=Lobster&amp;subset=latin,cyrillic);
+}
