@@ -78,6 +78,7 @@ a, a:hover {text-decoration: none;}
 	color: #777;
 }
 
+<<<<<<< HEAD
 
 /* Smooth animation */
 
@@ -86,6 +87,8 @@ a, a:hover {text-decoration: none;}
 }
 
 
+=======
+>>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
 /* Header */
 
 #header {
@@ -124,7 +127,11 @@ a, a:hover {text-decoration: none;}
 }
 
 .logo a {
+<<<<<<< HEAD
 	color: #8B4250;
+=======
+	color:#8B4250;
+>>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
 }
 
 .logo a:hover {
@@ -136,7 +143,10 @@ a, a:hover {text-decoration: none;}
 .nav {
 	float: right;
 	padding-top: 5px;
+<<<<<<< HEAD
 	margin-right: 120px;
+=======
+>>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
 	user-select: none;
 }
 
@@ -157,6 +167,7 @@ a, a:hover {text-decoration: none;}
 
 .nav a:hover, #header.default .nav a:hover {text-decoration: none; color: gray;}
 
+<<<<<<< HEAD
 /* Toggle switch */
 
 .toggle {
@@ -214,6 +225,8 @@ a, a:hover {text-decoration: none;}
   opacity:0.2;
 }
 
+=======
+>>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
 /* Section HOME */
 
 #home {
@@ -372,12 +385,20 @@ h5.title a:hover {text-decoration: underline;}
 	 -o-transform: scale(1.07);*/
 }
 
+<<<<<<< HEAD
 /*.line_caption {
+=======
+.line_caption {
+>>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
 	 height: 5px;
 	 border-radius: 10px;
 	 background: black;
 	 margin-bottom: 20px;
+<<<<<<< HEAD
  }*/
+=======
+ }
+>>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
 
 .row img {
   width: 800px;
@@ -429,6 +450,7 @@ h5.title a:hover {text-decoration: underline;}
 	color: white;
 	margin-top: 60px;
 }
+<<<<<<< HEAD
 
 /* Small smartphones / Media.css */
 
@@ -439,3 +461,5 @@ h5.title a:hover {text-decoration: underline;}
 	}
 
 }
+=======
+>>>>>>> a9cc84d9f21feab20e8b821e48cb0a1e7f9c2d5b
