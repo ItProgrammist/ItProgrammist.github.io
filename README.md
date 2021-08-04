@@ -1,4 +1,4 @@
-### This is my own portfolio site on GitHub Pages
+### This is my own portfolio site on GitHub Pages:
 <a href="https://itprogrammist.github.io/">Web-Site</a>
 
 ## You can visit my site and send me a message :)
