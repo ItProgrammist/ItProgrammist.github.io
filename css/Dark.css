@@ -12,7 +12,7 @@
 /* Smooth animation */
 
 #skills, .descr, #portfolio, #services, #footer {
-	transition: 400ms cubic-bezier(0, 0, 0, 1);
+	transition: 100ms cubic-bezier(0, 0, 0, 1);
 }
 
 
