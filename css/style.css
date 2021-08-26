@@ -82,7 +82,7 @@ a, a:hover {text-decoration: none;}
 /* Smooth animation */
 
 #skills, .descr, #portfolio, #services, #footer {
-	transition: 200ms cubic-bezier(0, 0, 0, 1);
+	transition: 100ms cubic-bezier(0, 0, 0, 1);
 }
 
 
@@ -172,7 +172,7 @@ a, a:hover {text-decoration: none;}
   box-shadow: 0 0 7px #3C3B3B;
   box-sizing: border-box;
   height: 42px;
-  transition: 200ms cubic-bezier(0, 0, 0, 1);
+  transition: 100ms cubic-bezier(0, 0, 0, 1);
   width: 70px;
   display: inline-block;
   vertical-align: middle;
