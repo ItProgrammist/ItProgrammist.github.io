@@ -8,14 +8,6 @@
 	color: #8B4250;
 }
 
-
-/* Smooth animation */
-
-#skills, .descr, #portfolio, #services, #footer {
-	transition: 100ms cubic-bezier(0, 0, 0, 1);
-}
-
-
 /* About me  */
 
 #skills {
