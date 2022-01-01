@@ -225,15 +225,15 @@
 
 				<form class="PHP_Form col-8" action="https://anthropical-ages.000webhostapp.com/form-lesson/mail.php" method="post" name="It-Studio">
 
-   					<div class="form-group">
+   					<div class="form-group" style="user-select: none;">
       					<input type="email" class="form-control" name="email" placeholder=" Ваша эл. почта">
       				</div>
 
-   					<div class="form-group">
+   					<div class="form-group" style="user-select: none;">
    						<textarea id="PHP_Text" class="col-12 form-control" type="text" placeholder="Ваше сообщение" name="text" required="required"></textarea>
       				</div>
 
-   					<button type="submit" value="Submit" onclick="btn()" id="btn_Media" class="PHP_Buttton btn btn-danger col-12"><p id="footer_text_btn" class="mt-2">SUBMIT</p></button>
+   					<button type="submit" value="Submit" id="btn_Media" class="PHP_Buttton btn btn-danger col-12"><p id="footer_text_btn" class="mt-2">SUBMIT</p></button>
 				
 				</form>
 				
@@ -285,10 +285,10 @@
 		//Указываем текущий год
 		document.getElementById('copyright_Media').innerHTML = "©Copyright 2020-" + (new Date()).getFullYear() + ". Private license."
 
-		// Успешная отправка формы на почту
-		function btn() {
-			alert('✔ Ваше сообщение успешно отправлено. Ожидайте нашего ответа на указанную вами почту. Нажмите "OK" для продолжения.');
-		}
+		// // Успешная отправка формы на почту
+		// function btn() {
+		// 	alert('✔ Ваше сообщение успешно отправлено. Ожидайте нашего ответа на указанную вами почту. Нажмите "OK" для продолжения.');
+		// }
 
 		// Плавная прокрутка меню
 		$(document).ready(function(){
@@ -307,6 +307,11 @@
 					$("#header").css({
 						"backgroundColor": `rgb(254, 254, 254, 0)`,
 					})
+					$("#header").css({
+						"-webkit-box-shadow": `0px 0px 0px 0px rgba(50, 50, 50, 0.87)`,
+						"-moz-box-shadow":    `0px 0px 0px 0px rgba(50, 50, 50, 0.87)`,
+						"box-shadow":         `0px 0px 0px 0px rgba(50, 50, 50, 0.87)`,
+					})	
 				}
 
 
@@ -335,7 +340,10 @@
 							"position": "fixed",
 							"top": "0",
 							"backgroundColor": `white`,
-							"transition": "background-color 0.1s ease"
+							"transition": "background-color 0.1s ease",
+							"-webkit-box-shadow": `0px 3px 8px 0px rgba(50, 50, 50, 0.87)`,
+							"-moz-box-shadow":    `0px 3px 8px 0px rgba(50, 50, 50, 0.87)`,
+							"box-shadow":         `0px 1px 10px 0px rgba(50, 50, 50, 0.87)`,
 						}
 					)
 					$('#navJS a').css({

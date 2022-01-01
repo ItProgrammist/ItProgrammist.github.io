@@ -1,6 +1,8 @@
 		
 		/* style.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,11 +22,45 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Raleway', sans-serif;
 }
 
 html {
 	height: 100%;
 }
+
+/* Color highlighting of text */
+
+h2::selection {
+    color: white;
+    background: #ffa600;
+}
+
+h4::selection {
+    color: white;
+    background: #ffa600; 
+}
+
+p::selection {
+    color: white;
+    background: #ffa600; 
+}
+
+br::selection {
+    color: white;
+    background: #ffa600; 
+}
+
+input::selection {
+    color: white;
+    background: #ffa600; 
+}
+
+textarea::selection {
+    color: white;
+    background: #ffa600; 
+}
+
 
 body {
 	height: 100%;
@@ -98,9 +134,9 @@ a, a:hover {text-decoration: none;}
 	top: 0;
 	background-color: rgba(254, 254, 254);
 	transition: background-color 0.2s ease;
-	/* -webkit-box-shadow: 0px 3px 8px 0px rgba(50, 50, 50, 0.87);
+	 -webkit-box-shadow: 0px 3px 8px 0px rgba(50, 50, 50, 0.87);
 	-moz-box-shadow:    0px 3px 8px 0px rgba(50, 50, 50, 0.87);
-	box-shadow:         0px 3px 8px 0px rgba(50, 50, 50, 0.87);	 */
+	box-shadow:         0px 1px 10px 0px rgba(50, 50, 50, 0.87);	 
 }
 
 #header a:hover {
