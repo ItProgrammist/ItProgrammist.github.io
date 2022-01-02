@@ -54,7 +54,7 @@
       <h2>Game Over !!</h2>
       <h3 class="notif-content">You won</h3>
       <h4>Correct Word: <span class="notif-span"></span></h4>
-      <button class="notif-btn">Play again</button>
+      <button class="notif-btn" value="Refresh Page" onClick="window.location.href=window.location.href">Play again</button>
       <button class="notif-btn"><a href="indexN3.html" style="color: black; text-decoration: none;">Next game</a></button>
     </div>
 
@@ -87,9 +87,9 @@ let letters;
 let lives;
 
 const words = new Map([
-  ['icicles', 'candle'],
-  ['eggnog', 'mulled wine'],
-  ['wreath', 'snowman'],
+  ['icicles'], ['candle'],
+  ['eggnog'], ['mulled wine'],
+  ['wreath'], ['snowman'],
 ]);
 
 // making a list of only keys from words
@@ -221,11 +221,11 @@ const letterPress = function () {
 letters.forEach(btn => {
   btn.addEventListener('click', letterPress);
 });
-
+console.log(select_word)
 // Listening to hint btn
 hintButton.addEventListener('click', function () {
   hintDiv.classList.remove('hidden');
-  hintText.textContent = words.get(select_word);
+  hintText.textContent = select_word;
 });
 
 
