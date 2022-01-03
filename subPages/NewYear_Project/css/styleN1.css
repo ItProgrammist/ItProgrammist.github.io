@@ -1,5 +1,5 @@
 body {
- background-image: url('bg.jpg');
+ background-image: url('../img/bg.jpg');
  background-repeat: no-repeat;
  background-attachment: fixed;
  -webkit-background-size: cover;
@@ -223,7 +223,7 @@ p {
     position: relative;
     vertical-align: middle;
     text-align: center;
-    top: 30%;
+    top: 40%;
 }
 
 #menuBall3 {
