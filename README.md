@@ -27,6 +27,6 @@ On this site I will publish my projects, which you can evaluate and see. Maybe y
 
 `git commit -m`  `"My First Commit!"`
 
-`git push origin master` // Final PUSH, everything should work! May ask for a password after that (Not always/ use `git config --local user.name` `"Username"` AND `git config --local user.email` `"Username"`)!
+`git push origin master` // Final PUSH, everything should work! May ask for a password after that (Not always/ use `git config --local user.name` `"Username"` AND `git config --local user.email` `"Email"`)!
 
 `git push --force origin master` // Forced push if the normal push did not work (by the command above)
