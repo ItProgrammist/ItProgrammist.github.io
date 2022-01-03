@@ -19,7 +19,7 @@ On this site I will publish my projects, which you can evaluate and see. Maybe y
 
 `git add -A` // Add all files
 
-`git pull` // ! Always execute before `git push` OR Execute if` git push` didn't work!
+`git pull` // ! Always execute before `git push` OR Execute if `git push` didn't work!
 
 `git reset --hard master` // If `git pull` didn't work
 
