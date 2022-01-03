@@ -1,4 +1,4 @@
-`git clone` #`https://github.com/ItProgrammist/ItProgrammist.github.io.git`#
+`git clone` `https://github.com/ItProgrammist/ItProgrammist.github.io.git`
 
 
 
