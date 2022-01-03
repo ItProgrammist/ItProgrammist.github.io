@@ -1,4 +1,4 @@
-`git clone https://github.com/ItProgrammist/ItProgrammist.github.io.git`
+`git clone #https://github.com/ItProgrammist/ItProgrammist.github.io.git#`
 
 
 
@@ -13,7 +13,7 @@
 
 `git status` // Проверить наличие файлов после добавления
 
-`git commit -m "My First Commit!"`
+`git commit -m #"My First Commit!"#`
 
 `git push origin master` // Финальный ПУШ, все должно работать! Может спросить пароль после этого (Не всегда)!
 
