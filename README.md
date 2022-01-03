@@ -15,18 +15,18 @@ On this site I will publish my projects, which you can evaluate and see. Maybe y
 `git clone`  `https://github.com/ItProgrammist/ItProgrammist.github.io.git`
 
 
-`git status` // Это, чтобы проверить наличие файлов
+`git status` // This is to check for files
 
-`git add -A` // Добавляем все файлы
+`git add -A` // Add all files
 
-`git pull` // ! Всегда выполнять перед `git push` ИЛИ Выполнять, если не сработал `git push`
+`git pull` // ! Всегда выполнять перед `git push` OR Execute if `git push` didn't work!
 
-`git reset --hard master` // Если не сработал `git pull`
+`git reset --hard master` // If `git pull` didn't work
 
-`git status` // Проверить наличие файлов после добавления
+`git status` // Check for files after adding
 
 `git commit -m`  `"My First Commit!"`
 
-`git push origin master` // Финальный ПУШ, все должно работать! Может спросить пароль после этого (Не всегда)!
+`git push origin master` // Final PUSH, everything should work! May ask for a password after that (Not always/ use `git config --local user.name` `""` AND `git config --local user.email` `""`)!
 
-`git push --force origin master` // Принудительный push, если не сработал обычный (командой выше)
+`git push --force origin master` // Forced push if the normal push did not work (by the command above)
