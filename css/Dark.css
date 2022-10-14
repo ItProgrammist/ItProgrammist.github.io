@@ -8,6 +8,29 @@
 	color: #8B4250;
 }
 
+
+/* SVG */
+#skills_svg {
+	fill: #7C3F8E;
+	background-image: url(../img/dark_background.png);
+}
+
+#portfolio_svg1 {
+	fill: #7C3F8E;
+	background-color: #222222;
+}
+
+#portfolio_svg2 {
+	fill: #7C3F8E;
+	background-color: #222222;
+}
+
+#services_svg {
+	fill: #7C3F8E;
+	background-image: url(../img/dark_background.png);
+}
+
+
 /* About me  */
 
 #skills {

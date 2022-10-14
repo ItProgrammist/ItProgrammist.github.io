@@ -56,6 +56,7 @@
 					</li>
 				</ul>
 			</div>
+			<div id="menu_line"></div>
 		</div>
 		<div id="home" mame="home">
 			<div id="welcome" class="container wow bounceIn">
@@ -98,12 +99,18 @@
 				</div>
 			</div>
 		</div>
+		
 	</div>
+
+	<!-- Waves svg PURPLE -->
+
+	<svg id="skills_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,128L30,154.7C60,181,120,235,180,234.7C240,235,300,181,360,154.7C420,128,480,128,540,149.3C600,171,660,213,720,197.3C780,181,840,107,900,106.7C960,107,1020,181,1080,202.7C1140,224,1200,192,1260,176C1320,160,1380,160,1410,160L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+	<svg id="portfolio_svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,128L30,154.7C60,181,120,235,180,234.7C240,235,300,181,360,154.7C420,128,480,128,540,149.3C600,171,660,213,720,197.3C780,181,840,107,900,106.7C960,107,1020,181,1080,202.7C1140,224,1200,192,1260,176C1320,160,1380,160,1410,160L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
 
 	<!-- Portfolio -->
 
 	<div id="portfolio" name="portfolio">
-		<div class="container">
+		<div class="container" id="portfolio_text">
 			<h2 class="title wow fadeIn">Моё портфолио</h2>
 			<p class="descr wow fadeIn">Все мои проекты сосредоточены здесь</p>
 		</div>
@@ -175,6 +182,11 @@
 		</div>
 	</div>	
 
+	<!-- Waves svg PURPLE -->
+
+	<svg id="portfolio_svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,128L26.7,117.3C53.3,107,107,85,160,101.3C213.3,117,267,171,320,208C373.3,245,427,267,480,256C533.3,245,587,203,640,170.7C693.3,139,747,117,800,122.7C853.3,128,907,160,960,181.3C1013.3,203,1067,213,1120,202.7C1173.3,192,1227,160,1280,160C1333.3,160,1387,192,1413,208L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+	<svg id="services_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,128L26.7,117.3C53.3,107,107,85,160,101.3C213.3,117,267,171,320,208C373.3,245,427,267,480,256C533.3,245,587,203,640,170.7C693.3,139,747,117,800,122.7C853.3,128,907,160,960,181.3C1013.3,203,1067,213,1120,202.7C1173.3,192,1227,160,1280,160C1333.3,160,1387,192,1413,208L1440,224L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+
 	<!-- Services -->
 
 	<div id="services" name="services">
@@ -223,7 +235,7 @@
 
 				<div class="col-2"></div>
 
-				<form class="PHP_Form col-8" action="https://anthropical-ages.000webhostapp.com/form-lesson/mail.php" method="post" name="It-Studio">
+				<form class="PHP_Form col-8" action="https://formspree.io/f/xyyoadbw" method="post" name="It-Studio">
 
    					<div class="form-group" style="user-select: none;">
       					<input type="email" class="form-control" name="email" placeholder=" Ваша эл. почта">
@@ -281,14 +293,17 @@
 		$('#home').css({
 			"height": window.screen.height
 		})
+
+		// Высота веб-страницы для линии у меню
+		const pageHeight = window.outerHeight;
 		
 		//Указываем текущий год
 		document.getElementById('copyright_Media').innerHTML = "©Copyright 2020-" + (new Date()).getFullYear() + ". Private license."
 
-		// // Успешная отправка формы на почту
-		// function btn() {
-		// 	alert('✔ Ваше сообщение успешно отправлено. Ожидайте нашего ответа на указанную вами почту. Нажмите "OK" для продолжения.');
-		// }
+		// Успешная отправка формы на почту
+		function btn() {
+			alert('✔ Ваше сообщение успешно отправлено. Ожидайте нашего ответа на указанную вами почту. Нажмите "OK" для продолжения.');
+		}
 
 		// Плавная прокрутка меню
 		$(document).ready(function(){
@@ -297,57 +312,76 @@
 			$("#header").removeClass("default");
 
 			$(window).scroll(function(){
+
 				elScroll = $(this).scrollTop();
+
 				if (elScroll == 0 ) {
 
 					$("#navJS a").css({
-						"color": "white"
+						"color": "white",
 					})
 
-					$("#header").css({
-						"backgroundColor": `rgb(254, 254, 254, 0)`,
-					})
-					$("#header").css({
-						"-webkit-box-shadow": `0px 0px 0px 0px rgba(50, 50, 50, 0.87)`,
-						"-moz-box-shadow":    `0px 0px 0px 0px rgba(50, 50, 50, 0.87)`,
-						"box-shadow":         `0px 0px 0px 0px rgba(50, 50, 50, 0.87)`,
-					})	
+					$("#header").css(
+						{
+							"position": "fixed",
+							"top": "20px",
+							"backgroundColor": `rgb(254, 254, 254, 0)`,
+							"transition": "top 0.2s ease",
+						}
+					)
 				}
 
+				// Появление линии у меню при скролле вниз
+				if (elScroll >= pageHeight-20) {
+					$("#menu_line").css(
+						{
+							"background-color": "rgb(235,235,235)",
+						}
+					)
+				}
 
-				if (elScroll > 0 && elScroll < 450 ) {
+				else {
+					$("#menu_line").css(
+						{
+							"background-color": "rgba(254, 254, 254, 0)",
+						}
+					)
+				}
+
+				if (elScroll > 0 && elScroll < 450) {
 					$("#header").css(
 						{
 							"position": "fixed",
 							"top": "0",
 							"backgroundColor": `rgb(254, 254, 254, ${elScroll/450})`,
-							"transition": "background-color 0.1s ease"
+							"transition": "background-color 0.1s ease",
+							"transition": "top 0.1s ease",
 						}
 					)
 
 
-					if ( elScroll>290 && elScroll <= 450){
+					if (elScroll>290 && elScroll <= 450){
 						$('#navJS a').css({
-							"color": `rgb(${254 - (elScroll-200)}, ${254 - (elScroll-200)}, ${254 - (elScroll-200)})`
+							"color": `rgb(${254 - (elScroll-200)}, ${254 - (elScroll-200)}, ${254 - (elScroll-200)})`,
 						})
 					}
 
 				}
+
 				else if (elScroll >= 450) {
 					$("#header").addClass("default").fadeIn('fast');
+
 					$("#header").css(
 						{
 							"position": "fixed",
 							"top": "0",
 							"backgroundColor": `white`,
 							"transition": "background-color 0.1s ease",
-							"-webkit-box-shadow": `0px 3px 8px 0px rgba(50, 50, 50, 0.87)`,
-							"-moz-box-shadow":    `0px 3px 8px 0px rgba(50, 50, 50, 0.87)`,
-							"box-shadow":         `0px 1px 10px 0px rgba(50, 50, 50, 0.87)`,
 						}
 					)
+
 					$('#navJS a').css({
-						"color": "black"
+						"color": "black",
 					})
 				};
 			});
@@ -388,6 +422,7 @@
 			        if ($(window).scrollTop() >= 450) {
 			        	$("#header").css({
 			                "backgroundColor": `#222222`,
+			                "transition": "background-color 0s ease",
 			            });
 
 			            $("#navJS a").css({
@@ -395,6 +430,24 @@
 			            });
 
 			        }
+
+			        // Появление линии у меню при скролле вниз
+						if ($(window).scrollTop() >= pageHeight-20) {
+							$("#menu_line").css(
+								{
+									"background-color": "rgb(31,31,31)",
+								}
+							)
+						}
+
+						else {
+							$("#menu_line").css(
+								{
+									"background-color": "rgba(254, 254, 254, 0)",
+								}
+							)
+						}
+
 			    });
 
 
@@ -417,14 +470,13 @@
 
 			                if ( elScroll>290 && elScroll <= 450){
 			                    $('#navJS a').css({
-			                        "color": `white`
+			                        "color": `white`,
 			                    })
 			                }
 
 			            }
-			                
+
 			            else if (elScroll >= 450) {
-			                $("#header").addClass("default").fadeIn('fast');
 			                $("#header").css(
 			                    {
 			                        "backgroundColor": `#222222`,
@@ -432,9 +484,27 @@
 			                )
 
 			                $('#navJS a').css({
-			                    "color": "white"
+			                    "color": "white",
 			                })
 			            };
+
+			            // Появление линии у меню при скролле вниз
+						if (elScroll >= pageHeight-20) {
+							$("#menu_line").css(
+								{
+									"background-color": "rgb(31,31,31)",
+								}
+							)
+						}
+
+						else {
+							$("#menu_line").css(
+								{
+									"background-color": "rgba(254, 254, 254, 0)",
+								}
+							)
+						}
+
 			        });
 			    });
 
@@ -454,13 +524,31 @@
 				    if ($(window).scrollTop() >= 450) {
 				    	$("#header").css({
 				            "backgroundColor": `white`,
+				            "transition": "background-color 0s ease",
 				        });
 
 				        $("#navJS a").css({
 				            "color": `black`,
 				        });
-
 				    }
+
+				    // Появление линии у меню при скролле вниз
+						if ($(window).scrollTop() >= pageHeight-20) {
+							$("#menu_line").css(
+								{
+									"background-color": "rgb(235,235,235)",
+								}
+							)
+						}
+
+						else {
+							$("#menu_line").css(
+								{
+									"background-color": "rgba(254, 254, 254, 0)",
+								}
+							)
+						}
+
 				});
 
 				// Плавная прокрутка меню СВЕТЛАЯ ТЕМА
@@ -483,7 +571,7 @@
 
 				            if ( elScroll>290 && elScroll <= 450){
 				                $('#navJS a').css({
-				                    "color": `rgb(${254 - (elScroll-200)}, ${254 - (elScroll-200)}, ${254 - (elScroll-200)})`
+				                    "color": `rgb(${254 - (elScroll-200)}, ${254 - (elScroll-200)}, ${254 - (elScroll-200)})`,
 				                })
 				            }
 
@@ -497,9 +585,27 @@
 				                }
 				            )
 				            $('#navJS a').css({
-				                "color": "black"
+				                "color": "black",
 				            })
 				        };
+
+				        // Появление линии у меню при скролле вниз
+						if (elScroll >= pageHeight-20) {
+							$("#menu_line").css(
+								{
+									"background-color": "rgb(235,235,235)",
+								}
+							)
+						}
+
+						else {
+							$("#menu_line").css(
+								{
+									"background-color": "rgba(254, 254, 254, 0)",
+								}
+							)
+						}
+
 				    });
 				});
 
