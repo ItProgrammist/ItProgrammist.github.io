@@ -13,8 +13,5 @@ layout: post
 > *Some text down here*
 
 <figure>
-   <a href="https://jekyllrb.com">
-     <p>JEKYLL, MAAAAAN!</p>
-   </a>
-   <figcaption>This is the Jekyll logo</figcaption>
+   <p> Yoooo maaaaaaaan! </p>
 </figure>
