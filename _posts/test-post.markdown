@@ -1,14 +1,4 @@
 ---
-{% include_relative ../index.html %}
-
-title: Test post
-date: 2022-12-03 07:44:00 Z
-permalink: test
-categories:
-- also_test
-tags:
-- test
-layout: post
 ---
 
 # This is my first post using Jekyll...
