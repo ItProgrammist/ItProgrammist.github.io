@@ -11,5 +11,4 @@ layout: post
 
 # This is my first post using Jekyll...
 
-> *Some text down here*\*
-<p>Hey</p>
+> **Some text down here**
