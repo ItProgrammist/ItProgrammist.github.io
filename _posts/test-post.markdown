@@ -1,6 +1,7 @@
 ---
-{% include_relative ../index.html %}
+title: 2022 12 03 Test Post
 ---
+
 title: Test post
 date: 2022-12-03 07:44:00 Z
 permalink: test
