@@ -19,4 +19,4 @@
 
 `git push --force origin master` // Принудительный push, если не сработал обычный (командой выше)
 
-`git remote set-url origin https://your_username:your_ssh_token@github.com/your_username/your_username.github.io.git`
+`git remote set-url origin https://your_username:your_ssh_token@github.com/your_username/your_username.github.io.git` // Авторизация через SSH Token, так как обычная авторизация через логин и пароль теперь недействительна на github
